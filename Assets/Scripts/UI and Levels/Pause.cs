@@ -6,17 +6,18 @@ using UnityEngine.SceneManagement;
 public class Pause : MonoBehaviour
 {
     [SerializeField] GameObject _pause;
-
+    [SerializeField] GameObject _joystickPanel;
     public void PauseOn()
     {
         _pause.SetActive(true);
         Time.timeScale = 0;
-
+        _joystickPanel.SetActive(false);
     }
 
     public void PauseOff()
     {
         _pause.SetActive(false);
+        _joystickPanel.SetActive(true);
         Time.timeScale = 1;
     }
 

@@ -415,6 +415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pause: {fileID: 1184368961}
+  _joystickPanel: {fileID: 1184368963}
 --- !u!1001 &640674687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -851,6 +852,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1184368963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4741748767411349426, guid: 3fd4bffb591021749b1f9da00f0f00c1, type: 3}
+  m_PrefabInstance: {fileID: 1184368960}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1252692120
 GameObject:
   m_ObjectHideFlags: 0
@@ -10445,11 +10451,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 417793, guid: b556601ccb0a70843b7d667369740141, type: 3}
       propertyPath: m_Size.x
-      value: 2.0544536
+      value: 1.9209464
+      objectReference: {fileID: 0}
+    - target: {fileID: 417793, guid: b556601ccb0a70843b7d667369740141, type: 3}
+      propertyPath: m_Size.y
+      value: 0.46084595
       objectReference: {fileID: 0}
     - target: {fileID: 417793, guid: b556601ccb0a70843b7d667369740141, type: 3}
       propertyPath: m_Offset.x
-      value: -0.016109586
+      value: 0.024969697
+      objectReference: {fileID: 0}
+    - target: {fileID: 417793, guid: b556601ccb0a70843b7d667369740141, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.26957703
       objectReference: {fileID: 0}
     - target: {fileID: 417793, guid: b556601ccb0a70843b7d667369740141, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -10518,11 +10532,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 417793, guid: b556601ccb0a70843b7d667369740141, type: 3}
       propertyPath: m_Size.x
-      value: 1.9496155
+      value: 1.8822212
       objectReference: {fileID: 0}
     - target: {fileID: 417793, guid: b556601ccb0a70843b7d667369740141, type: 3}
       propertyPath: m_Offset.x
-      value: -0.034936905
+      value: -0.0012397766
       objectReference: {fileID: 0}
     - target: {fileID: 417793, guid: b556601ccb0a70843b7d667369740141, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x

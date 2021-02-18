@@ -377,6 +377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pause: {fileID: 1636225282}
+  _joystickPanel: {fileID: 1636225284}
 --- !u!1001 &640674687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5880,6 +5881,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1636225284 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4741748767411349426, guid: 3fd4bffb591021749b1f9da00f0f00c1, type: 3}
+  m_PrefabInstance: {fileID: 1636225281}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1761950506
 GameObject:
   m_ObjectHideFlags: 0
