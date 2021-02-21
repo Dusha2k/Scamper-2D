@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class Pause : MonoBehaviour
 {
     [SerializeField] GameObject _pause;
     [SerializeField] GameObject _joystickPanel;
+    
     public void PauseOn()
     {
         _pause.SetActive(true);
@@ -32,4 +34,6 @@ public class Pause : MonoBehaviour
         SceneManager.LoadScene(0);
         Time.timeScale = 1;
     }
+
+    
 }

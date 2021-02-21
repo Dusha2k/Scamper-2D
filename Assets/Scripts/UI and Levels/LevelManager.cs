@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class LevelManager : MonoBehaviour
 {
     private int _levelInLock;
     [SerializeField] private Button[] _buttons;
+    [SerializeField] private AudioMixerGroup _audioMixer;
 
     private void Start()
     {
@@ -27,5 +29,15 @@ public class LevelManager : MonoBehaviour
     public void LoadLevel(int levelindex)
     {
         SceneManager.LoadScene(levelindex);
+    }
+
+    public void EffectsMixer(float masterVolue)
+    {
+        _audioMixer.audioMixer.SetFloat("EffectsVolume", Mathf.Log10(masterVolue) * 20);
+    }
+
+    public void MusicMixer(float masterVolue)
+    {
+        _audioMixer.audioMixer.SetFloat("MusicVolume", Mathf.Log10(masterVolue) * 20);
     }
 }

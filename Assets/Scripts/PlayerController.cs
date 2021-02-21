@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
         }
 
         SetAnimation();
-
+        
         //Ground checker
         _isGrounded = Physics2D.OverlapCircle(_feetPos.position, _checkRadius, _whatIsGrounded);
     }
